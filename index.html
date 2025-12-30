@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPL Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scoreboard">
+    <div class="header">
+        <h1>RCB</h1>
+        <span>vs</span>
+        <h1>MI</h1>
+    </div>
+
+    <div class="main-score">
+        <h2><span id="score">0</span>/<span id="wickets">0</span></h2>
+        <p>Overs: <span id="overs">0.0</span></p>
+        <p id="extraStatus"></p>
+    </div>
+
+    <div class="buttons">
+        <button onclick="addRun(0)">0</button>
+        <button onclick="addRun(1)">1</button>
+        <button onclick="addRun(2)">2</button>
+        <button onclick="addRun(3)">3</button>
+        <button onclick="addRun(4)">4</button>
+        <button onclick="addRun(6)">6</button>
+
+        <button class="extra" onclick="setExtra('NB')">No Ball</button>
+        <button class="extra" onclick="setExtra('WD')">Wide</button>
+
+        <button class="wicket" onclick="addWicket()">Wicket</button>
+    </div>
+
+    <button class="reset" onclick="resetMatch()">Reset Match</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
